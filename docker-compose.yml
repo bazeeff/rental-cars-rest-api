@@ -1,0 +1,17 @@
+web:
+  build: .
+  environment:
+    MYENV: EXAMPLE
+  volumes:
+    - .:/usr/src/rest
+  entrypoint: /usr/src/rest/entrypoint.sh
+web_migrate:
+  extends:
+    service: web
+  command: python manage.py loaddata /usr/src/rest/data.json
+web_run:
+  extends:
+    service: web
+  command: python manage.py runserver 0.0.0.0:8000
+  ports:
+    - "8000:8000"

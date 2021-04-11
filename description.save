@@ -1,0 +1,10 @@
+USER
+ email
+ name
+ language
+ password
+
+CAR
+ name 
+ created_at
+ added_at
