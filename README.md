@@ -1,17 +1,21 @@
 # rental-cars-rest-api
 
 ### 1 Склонировать проект.
+```console
 git clone https://github.com/bazeeff/rental-cars-rest-api.git
-
+```
 ### 2 Создать образ и запустить контейнер.
+```console
 sudo docker-compose up --build
-
+```
 ### 3 Найти container_id.
+```console
 docker ps -a
-
+```
 ### 4 Создать супер пользователя в новом окне терминала предварительно подставить значение container_id.
+```console
 docker exec -it container_id python manage.py createsuperuser
-
+```
 ### 5 Зайти в панель администратора и создать токен пользователю для работы с API.  
 
 ### 5 Конечные точки API и методы и примеры запросов:
@@ -113,8 +117,8 @@ DELETE http://127.0.0.1:8000/api/cars/1/
 Взаимодействие через Browsable API аналогично вышеописанному.
 
 ### 7 Запуск тестов 
-
+```console
 python manage.py test
-
+```
 
 
