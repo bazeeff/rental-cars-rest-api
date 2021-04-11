@@ -13,9 +13,10 @@ sudo docker-compose up --build
 ```console
 docker-compose exec web_run python manage.py createsuperuser
 ```
+
 ### 4 Зайти в панель администратора и создать токен пользователю для работы с API.
 
-### 5 Конечные точки API и методы и примеры запросов:
+### 5 Конечные точки API, методы и примеры запросов:
 
 Получить всех пользователей.
 GET http://127.0.0.1:8000/api/users/
