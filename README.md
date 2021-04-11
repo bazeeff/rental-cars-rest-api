@@ -67,7 +67,7 @@ json:
     "email": "new_test_admin@mail.ru",
     "username": "new_test_admin",
     "password":"new_123qwe",
-    "cars": [{"id":"1"},"id":"2"} ]
+    "cars": [{"id":"1"},{"id":"2"} ]
 }
 ```
 
