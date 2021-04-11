@@ -8,15 +8,12 @@ git clone https://github.com/bazeeff/rental-cars-rest-api.git
 ```console
 sudo docker-compose up --build
 ```
-### 3 Найти container_id.
+
+### 3 Создать супер пользователя
 ```console
-docker ps -a
+docker-compose exec web_run python manage.py createsuperuser
 ```
-### 4 Создать супер пользователя в новом окне терминала предварительно подставить значение container_id.
-```console
-docker exec -it container_id python manage.py createsuperuser
-```
-### 5 Зайти в панель администратора и создать токен пользователю для работы с API.  
+### 4 Зайти в панель администратора и создать токен пользователю для работы с API.
 
 ### 5 Конечные точки API и методы и примеры запросов:
 
