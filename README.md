@@ -23,7 +23,7 @@ docker-compose exec web_run python manage.py createsuperuser
 GET http://127.0.0.1:8000/api/users/
 
 
-Получить информацию о пользователей и его машины.
+Получить информацию о пользователе и его машины.
 
 GET http://127.0.0.1:8000/api/users/1/
 
