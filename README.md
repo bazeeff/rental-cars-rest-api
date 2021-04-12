@@ -77,6 +77,7 @@ json:
 ```
 
 Удаление пользователя.
+
 DELETE http://127.0.0.1:8000/api/users/1/
 
 
@@ -123,6 +124,7 @@ DELETE http://127.0.0.1:8000/api/cars/1/
 Взаимодействие через Browsable API аналогично вышеописанному.
 
 ### 7 Запуск тестов 
+
 ```console
 python manage.py test
 ```
