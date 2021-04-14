@@ -26,7 +26,7 @@ router.register(r'users', UserViewSet, basename="user")
 router.register(r'cars', CarViewSet, basename="car")
 urlpatterns = router.urls
 
-urlpatterns = [,
+urlpatterns = [
     url(r'^api/', include(router.urls)),
     path('api/auth/', obtain_auth_token, name='api-token-auth'),
     path('api/register/', UserViewSet.as_view({'post': 'create'})),
