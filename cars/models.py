@@ -13,6 +13,7 @@ class Car(models.Model):
     def __str__(self):
         return self.name
 
+
 class User(AbstractUser):
     username = models.CharField(blank=True, null=True, max_length=255)
     email = models.EmailField(_('email address'), unique=True)
